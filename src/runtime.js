@@ -155,7 +155,7 @@ function (_React$Component) {
       if (target) {
         return _react.default.Children.only((0, _utils.generate)(target.icon, 'svg-' + target.name, rootProps));
       } else {
-        return null;
+        return _react.default.createElement("svg", rootProps);
       }
     }
   }]);

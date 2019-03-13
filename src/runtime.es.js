@@ -88,6 +88,8 @@ export default class AutoReloadIcon extends React.Component {
     if (target) {
       return React.Children.only(generate(target.icon, 'svg-' + target.name, rootProps));
     }
-    else { return null; }
+    else {
+      return <svg {...rootProps}></svg>;
+    }
   }
 }
