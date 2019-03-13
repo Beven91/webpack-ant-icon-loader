@@ -5,7 +5,7 @@
 
 ### 一、简介篇
 
-用于解决 在引入[`ant-design`](https://ant-design.gitee.io/index-cn) `3.x`版本后，（全量引入`@ant-design/icons`图标文件），导致打包生成的主文件较大的问题。
+用于解决 在引入[`ant-design`](https://ant-design.gitee.io/index-cn) `3.x`版本后（全量引入`@ant-design/icons`图标文件），导致打包生成的主文件较大的问题。
 
 
 ### 二、安装篇
