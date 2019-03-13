@@ -1,0 +1,27 @@
+{
+  "name": "webpack-ant-icon-loader",
+  "version": "1.0.0",
+  "description": "ant design icons code split loader",
+  "main": "src/loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beven91/webpack-ant-icon-loader.git"
+  },
+  "keywords": [
+    "ant",
+    "design",
+    "@ant-design",
+    "icons",
+    "code",
+    "split"
+  ],
+  "author": "Beven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Beven91/webpack-ant-icon-loader/issues"
+  },
+  "homepage": "https://github.com/Beven91/webpack-ant-icon-loader#readme"
+}
