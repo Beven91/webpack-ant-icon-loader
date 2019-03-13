@@ -5,7 +5,7 @@
 
 ### 一、简介篇
 
-用于临时解决 
+用于解决
 
 在引入[`ant-design`](https://ant-design.gitee.io/index-cn) `3.x`版本后，（全量引入`@ant-design/icons`图标文件），
 
