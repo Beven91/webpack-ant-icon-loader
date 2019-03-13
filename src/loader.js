@@ -1,7 +1,8 @@
-module.exports = function (content, sourceMaps) {
+module.exports = function () {
+  this.cacheable && this.cacheable();
   return ` 
     import AutoReloadIcon from '${__dirname}/runtime.js';
-    import('./index.js').then((allIcons) => { 
+    import('!!./dist.js').then((allIcons) => { 
         AutoReloadIcon.load(allIcons); 
     }); 
     export default { 
