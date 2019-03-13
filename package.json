@@ -1,6 +1,6 @@
 {
   "name": "webpack-ant-icon-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ant design icons code split loader",
   "main": "src/loader.js",
   "scripts": {
