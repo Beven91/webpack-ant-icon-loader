@@ -46,7 +46,7 @@ module.exports = {
 
 ### 四、原理篇
 
-主要通过`webpack`代码拆分(`import()`)来完成体积优化：
+主要通过`webpack`代码拆分([`import`](https://webpack.js.org/guides/code-splitting/#dynamic-imports))来完成体积优化：
 
 * 把`@antd-design/icons/lib/dist`的图标文件拆成独立的`chunk` （类似于加载独立的字体文件)。
 
