@@ -13,13 +13,13 @@
 > npm
 
 ```shell
-    npm install webpack-ant-icon-loader
+    npm install webpack-ant-icon-loader --save-dev
 ```
 
 > yarn
 
 ```shell
-    yarn add webpack-ant-icon-loader
+    yarn add webpack-ant-icon-loader --dev
 ```
      
 
