@@ -2,7 +2,7 @@ module.exports = function () {
   this.cacheable && this.cacheable();
   return ` 
     import AutoReloadIcon from 'webpack-ant-icon-loader/src/runtime.js';
-    import('!!./dist.js').then((allIcons) => { 
+    import('!!./dist.js').then(function(allIcons) { 
         AutoReloadIcon.load(allIcons); 
     }); 
     export default { 
