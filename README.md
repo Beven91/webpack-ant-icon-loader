@@ -48,9 +48,9 @@ module.exports = {
 
 主要通过`webpack`代码拆分([`import`](https://webpack.js.org/guides/code-splitting/#dynamic-imports))来完成体积优化：
 
-* 把`@antd-design/icons/lib/dist`的图标文件拆成独立的`chunk` （类似于加载独立的字体文件)。
+* 把`@antd-design/icons/lib/dist`的图标文件拆成独立的`chunk`,且异步加载后自动注册该图标文件图标。
 
-  由于[`ant design`](https://ant-design.gitee.io/index-cn) 内部组件使用了很多图标,所以不考虑按需加载图标的方案，仅仅是将图标文件拆分出来，减少`主文件`的体积。
+  由于[`ant design`](https://ant-design.gitee.io/index-cn) 内部组件使用了很多图标,所以不考虑按需加载图标的方案，仅仅是将图标文件拆分出来，减少`主文件`的体积，（类似于加载独立的字体文件)。
 
 * 通过`webpack-ant-icon-loader` 提供的`runtime.js` 来完成延迟加载图标的刷新。
 
