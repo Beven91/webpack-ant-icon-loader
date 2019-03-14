@@ -29,7 +29,6 @@
 
 ```js
 module.exports = {
-
   module:{
     rules:[
       {
