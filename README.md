@@ -44,6 +44,23 @@ module.exports = {
 
 ```
 
+> .umirc.js
+
+```js
+export default {
+  chainWebpack(config, { webpack }) {
+    
+    // code split @ant-design/icons
+    config.module
+    .rule('@ant-design/icons')
+    .include.add(require.resolve('@ant-design/icons/lib/dist')).end()
+    .use('ant-icon')
+    .loader('webpack-ant-icon-loader');
+   },
+}
+```
+
+
 ### 四、原理篇
 
 主要通过`webpack`代码拆分([`import`](https://webpack.js.org/guides/code-splitting/#dynamic-imports))来完成体积优化：
