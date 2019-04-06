@@ -60,6 +60,31 @@ export default {
 }
 ```
 
+> [`react-app-rewired`](https://github.com/timarney/react-app-rewired)
+> config-overrides.js
+
+```js
+const path = require('path');
+
+module.exports = {
+  // The Webpack config to use when compiling your react app for development or production.
+  webpack: function (config, env) {
+    // ...add your webpack config
+
+    // add webpack-ant-icon-loader
+    config.module.rules.push({
+      loader: 'webpack-ant-icon-loader',
+      enforce: 'pre',
+      include: [
+        path.resolve('node_modules/@ant-design/icons/lib/dist')
+      ]
+    })
+
+    return config;
+  },
+}
+```
+
 
 ### 四、原理篇
 
