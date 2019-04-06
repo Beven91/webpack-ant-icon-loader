@@ -85,7 +85,7 @@ module.exports = {
 }
 ```
 
-####  react-app-rewired & customize-cra
+>  react-app-rewired & customize-cra
 ```js
 const path = require('path');
 const { override } = require('customize-cra');
