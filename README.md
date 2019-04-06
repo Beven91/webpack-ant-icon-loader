@@ -85,6 +85,26 @@ module.exports = {
 }
 ```
 
+####  react-app-rewired & customize-cra
+```js
+const path = require('path');
+const { override } = require('customize-cra');
+
+module.exports = override(
+  // add webpack-ant-icon-loader
+  (config) => {
+    config.module.rules.push({
+      loader: 'webpack-ant-icon-loader',
+      enforce: 'pre',
+      include: [
+        path.resolve('node_modules/@ant-design/icons/lib/dist')
+      ]
+    });
+    return config;
+  },
+);
+```
+
 
 ### 四、原理篇
 
