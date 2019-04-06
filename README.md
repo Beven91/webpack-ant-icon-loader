@@ -25,6 +25,7 @@
 
 ### 三、使用篇
 
+#### [webpack](https://github.com/webpack/webpack)
 > webpack.config.js
 
 ```js
@@ -44,6 +45,7 @@ module.exports = {
 
 ```
 
+#### [umi](https://umijs.org/)
 > .umirc.js
 
 ```js
@@ -60,7 +62,7 @@ export default {
 }
 ```
 
-> [`react-app-rewired`](https://github.com/timarney/react-app-rewired)
+#### [`react-app-rewired`](https://github.com/timarney/react-app-rewired)
 > config-overrides.js
 
 ```js
@@ -84,8 +86,8 @@ module.exports = {
   },
 }
 ```
-
->  react-app-rewired & customize-cra
+#### [`customize-cra`](https://github.com/arackaf/customize-cra)
+> config-overrides.js
 ```js
 const path = require('path');
 const { override } = require('customize-cra');
