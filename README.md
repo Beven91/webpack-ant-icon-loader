@@ -36,7 +36,7 @@ module.exports = {
         loader:'webpack-ant-icon-loader',
         enforce: 'pre',
         include:[
-          path.resolve('node_modules/@ant-design/icons/lib/dist')
+          require.resolve('@ant-design/icons/lib/dist')
         ]
       }
     ]
@@ -78,7 +78,7 @@ module.exports = {
       loader: 'webpack-ant-icon-loader',
       enforce: 'pre',
       include: [
-        path.resolve('node_modules/@ant-design/icons/lib/dist')
+        require.resolve('@ant-design/icons/lib/dist')
       ]
     })
 
@@ -99,7 +99,7 @@ module.exports = override(
       loader: 'webpack-ant-icon-loader',
       enforce: 'pre',
       include: [
-        path.resolve('node_modules/@ant-design/icons/lib/dist')
+        require.resolve('@ant-design/icons/lib/dist')
       ]
     });
     return config;
